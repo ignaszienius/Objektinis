@@ -94,7 +94,13 @@ function replace($nr) {
 replace("+37061297966"); 
 
 //Uzduotis Nr.7
-echo date();
+
+echo "</br>";
+$christmas = strtotime('25 December 2017');
+$now = time();
+$timeleft = $christmas-$now;
+$daysleft = round((($timeleft/24)/60)/60); //probably...
+echo "There are $daysleft days left until christmas!";
 ?>
 
 
