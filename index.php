@@ -99,10 +99,20 @@ echo "</br>";
 $christmas = strtotime('25 December 2017');
 $now = time();
 $timeleft = $christmas-$now;
-$daysleft = round((($timeleft/24)/60)/60); //probably...
+$daysleft = round((($timeleft/24)/60)/60); 
 echo "Iki Kaledu liko $daysleft dienos!";
+
+
+//Uzduotis Nr.7
+
+echo "</br>";
+$mhm1 = [0,1,2,4,6,5,7];
+sort($mhm1);
+
+foreach ($mhm1 as $key => $value) {
+	if ($key != $value) {
+		echo "truksta: ". $key;
+		exit();
+	}
+}
 ?>
-
-
-
-
