@@ -100,7 +100,7 @@ $christmas = strtotime('25 December 2017');
 $now = time();
 $timeleft = $christmas-$now;
 $daysleft = round((($timeleft/24)/60)/60); //probably...
-echo "There are $daysleft days left until christmas!";
+echo "Iki Kaledu liko $daysleft dienos!";
 ?>
 
 
